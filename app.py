@@ -59,9 +59,10 @@ NUM_ROWS = 10
 BUFFER = 3
 row_caps = [ROW_CAPACITY]*NUM_ROWS #capacity of each row, index 0 corresponds to row A
 total_cap = ROW_CAPACITY*NUM_ROWS #total amount of seats left
-seating_str=""
-row_pref = []
+seating_str="" #our result
+
 #generate correct preferential order of rows; middle rows first, then outer rows
+row_pref = []
 for i in range((NUM_ROWS-1)//2,-1,-1):
     row_pref.append(i)
     row_pref.append(NUM_ROWS-i-1)
@@ -111,7 +112,7 @@ for i in range(len(requests)):
                 if row_cap>0:
 
                     for j in range(min(request,row_cap)):
-                        temp_str = temp_str +","+ str(num_to_row[row]) + str(j+ROW_CAPACITY-row_cap+1)
+                        temp_str = temp_str +","+ str(NUM_TO_ROW[row]) + str(j+ROW_CAPACITY-row_cap+1)
                     #update our total and row by row capacity
                     total_cap = total_cap - min(request+BUFFER,row_cap)
                     row_caps[row]=row_cap-(request+BUFFER)
@@ -127,5 +128,5 @@ for i in range(len(requests)):
 #remove extra newline at beginning of str
 if seating_str!="":
     seating_str =seating_str[1:]
-print(seating_str)
+#print(seating_str)
 print(result_to_file(seating_str))
