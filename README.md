@@ -8,7 +8,7 @@ git clone https://github.com/nguyentommycs/theater-seating.git
 ``` 
 2. cd into the folder containing app.py
 ```sh
-cd C:\fakepath\theater-seating
+cd theater-seating
 ``` 
 3. Run the program by passing in the input file path. Use this command to run the sample input, or replace ```.\sampleinput``` with the full path to your input.
 ```sh
