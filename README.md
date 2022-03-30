@@ -1,26 +1,18 @@
 # theater-seating
 
 # Setup
-
+Ensure you have Python installed. Ths was created in version 3.10.2 but other versions will probably work.
 1. Clone this repo 
 ```sh
 git clone https://github.com/nguyentommycs/theater-seating.git
 ``` 
-2. Create a virtual environment
+2. cd into the folder containing app.py
 ```sh
-python -m venv env
+cd C:\\fakepath\\theater-seating
 ``` 
-3. (a) For Windows, activate the virtual environment<br />
+3. Run the program by passing in the input file path. Use this command to run the sample input, or replace ```.\sampleinput``` with the full path to your input.
 ```sh
-env\Scripts\activate.bat
-```
-3. (b) For Linux, activate the virtual environment<br />
-```sh
-source env/bin/activate
-```
-4. Run the program by passing in the input file path. Use this command to run the sample input, or replace ```.\sampleinput``` with the full path to your input.
-```sh
-python app.py .\sampleinput
+python app.py .\\sampleinput
 ```
 # Assumptions
 1. Middle rows are preferred to outer rows (i.e. rows E>F>D>G>C>H...). Earlier requests will receieve seats as close to middle row as possible.
