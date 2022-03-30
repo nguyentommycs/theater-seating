@@ -8,11 +8,11 @@ git clone https://github.com/nguyentommycs/theater-seating.git
 ``` 
 2. cd into the folder containing app.py
 ```sh
-cd C:\\fakepath\\theater-seating
+cd C:\fakepath\theater-seating
 ``` 
 3. Run the program by passing in the input file path. Use this command to run the sample input, or replace ```.\sampleinput``` with the full path to your input.
 ```sh
-python app.py .\\sampleinput.txt
+python app.py .\sampleinput.txt
 ```
 # Assumptions
 1. Middle rows are preferred to outer rows (i.e. rows E>F>D>G>C>H...). Earlier requests will receieve seats as close to middle row as possible.
