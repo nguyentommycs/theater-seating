@@ -19,7 +19,7 @@ env\Scripts\activate.bat
 ```sh
 source env/bin/activate
 ```
-4. Run the program by passing in the input file path. Use this command to run the sample input, or replace ```sh .\sampleinput ``` with the full path to your input
+4. Run the program by passing in the input file path. Use this command to run the sample input, or replace ```.\sampleinput ``` with the full path to your input.
 ```sh
 python app.py .\sampleinput
 ```
